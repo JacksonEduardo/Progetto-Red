@@ -1,0 +1,193 @@
+
+body{
+    padding-bottom: 30px;
+    background-color: rgb(236,236,236);
+}
+
+:root{
+    --main: darkred;
+    --secondary: #C67F7F;
+    --accent: #ececec;
+    --background:rgb(236,236,236) ;
+}
+
+*{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.title{
+    color: var(--main);
+}
+.text_important{
+    font-family: 'Nova Square', cursive;
+    color: var(--main);
+    
+}
+
+.background_description{
+    background-color: rgb(236,236,236);
+}
+
+/* / NAVBAR */
+.logo_custom{
+    width: 150px;
+} 
+
+.lorem{
+    letter-spacing: 15px;
+    font-size: 60px;
+}
+
+
+.header_custom{
+    background-image: linear-gradient(rgba(255,255,255, 0.3),rgba(255,255,255, 0.3) ), url(./media/switzerland-862870_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.montain_custom{
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* ICONE CON PSEUDO ELEMENTI */
+.icone_custom{
+    width: 30px;
+
+}
+
+.line{
+    width: 100%;
+    position: relative;
+}
+
+.line::after{
+    content: "";
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background: var(--main);
+  transform: translateX(-50%);
+}
+
+
+.line:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid var(--main);
+    background-color: white;
+    z-index: 1;
+}
+
+
+/* PULSANTE CENTRALE */
+.immagine_bianca{
+    background-image: url(./media/trees2.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.bottone{
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--main);
+    border: none;
+}
+
+
+/* OUR TIMELINE */
+.timeline{
+    background-image: url(./media/single.png);
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+/* OUR BENEFIT ED IMMAGINI TONDE */
+
+.card_cerchio{
+    background-color: var(--background)
+}
+
+.cerchio_rosso{
+    height: 8rem;
+    width: 8rem;
+    border: 2px solid var(--main);
+    border-radius: 50%;
+}
+
+.immagine_tonda{
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+}
+
+
+.card_tonda{
+    color: var(--main);
+}
+
+/* OUR BENEFIT */
+    /* all'interno del cerchio rosso c'è anche l'immagine, è tutto un div intero */
+
+.cerchio_rosso_benefit{
+    height: 12rem;
+    width: 12rem;
+    border: 2px solid var(--main);
+    border-radius: 50%;
+}
+
+.immagine_tonda_benefit{
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px){
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .cerchio_media{
+        margin-top: 40px;
+    }
+}
+
+
+/* FOOTER IMMAGINE ROSSA */
+.img_rossa{
+    background-image: url(./media/other.png);
+    height: 400px;
+    background-size: cover;
+}
+
+/* FOOTER ROSSA */
+.container_footer{
+    background-color: var(--main);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
