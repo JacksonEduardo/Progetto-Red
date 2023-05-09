@@ -67,8 +67,24 @@ body{
     position: relative;
 }
 
-.line::after{
+.line:before {
     content: "";
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--main);
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+}
+
+.line::after{
+  content: "";
   position: absolute;
   width: 100%;
   left: 50%;
@@ -77,24 +93,6 @@ body{
   background: var(--main);
   transform: translateX(-50%);
 }
-
-
-.line:before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    margin: 0 auto;
-    padding: 0;
-    border: 1px solid var(--main);
-    background-color: white;
-    z-index: 1;
-}
-
 
 /* PULSANTE CENTRALE */
 .immagine_bianca{
